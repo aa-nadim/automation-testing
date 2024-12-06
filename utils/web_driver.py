@@ -11,7 +11,7 @@ def setup_chrome_driver():
     """
     # Chrome options for headless and no-gui mode
     chrome_options = Options()
-    chrome_options.add_argument("--headless")  # Run in background
+    # chrome_options.add_argument("--headless")  # Run in background
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     
