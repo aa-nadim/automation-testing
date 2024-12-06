@@ -1,0 +1,41 @@
+  _______________________________env_____________________
+  python3 -m venv .venv
+  source .venv/bin/activate     # On Windows, use: source .venv/Scripts/activate 
+  deactivate
+  ________________________________________________________
+
+# Create the main project directory
+mkdir vacation_rental_testing
+cd vacation_rental_testing
+
+# Create subdirectories
+mkdir config drivers logs reports screenshots screenshots/failed_tests tests utils
+
+
+# Create files in the root directory
+touch requirements.txt main.py
+
+# Create files in the config directory
+touch config/config.py
+
+# Create placeholder for WebDriver
+touch drivers/chromedriver  # Replace this with the actual ChromeDriver binary
+
+# Create the logs file
+touch logs/test_logs.log
+
+# Create the report file
+touch reports/test_results.xlsx
+
+# Create files in the screenshots directory
+# No files needed initially; directory is for screenshots
+
+# Create test script
+touch tests/test_vacation_rental.py
+
+# Create utility scripts
+touch utils/__init__.py utils/report_generator.py utils/web_driver.py
+
+________________________________________________________
+
+pip install -r requirements.txt

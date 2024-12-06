@@ -1,0 +1,15 @@
+2024-12-06 10:44:44,522 - INFO: 🚀 Starting Vacation Rental Website Automation Tests
+2024-12-06 10:44:44,522 - INFO: ==================================================
+2024-12-06 10:44:44,522 - INFO: ====== WebDriver manager ======
+2024-12-06 10:44:44,604 - INFO: Get LATEST chromedriver version for google-chrome
+2024-12-06 10:44:45,087 - INFO: Get LATEST chromedriver version for google-chrome
+2024-12-06 10:44:45,529 - INFO: Driver [/home/w3e12/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver] found in cache
+2024-12-06 10:44:46,118 - INFO: 
+📋 Running Test: H1 Tag Test
+2024-12-06 10:44:51,564 - INFO: ✅ PASSED: H1 Tag Test
+2024-12-06 10:44:51,564 - INFO: Comments: H1 tag found
+2024-12-06 10:44:51,564 - INFO: 
+📊 Generating Test Report...
+2024-12-06 10:44:52,048 - INFO: ✨ Test Report Generated: /home/w3e12/Desktop/Assignment-7/automation-testing/reports/vacation_rental_test_results.xlsx
+2024-12-06 10:44:52,048 - INFO: 
+🎉 All Tests Completed Successfully!
