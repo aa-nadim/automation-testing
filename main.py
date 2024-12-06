@@ -10,7 +10,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s: %(message)s',
     handlers=[
-        logging.FileHandler('test_execution.log'),  # Log to file
+        logging.FileHandler('logs/test_logs.log'),  # Log to file
         logging.StreamHandler(sys.stdout)  # Log to console
     ]
 )
@@ -25,7 +25,7 @@ def run_tests():
     
     try:
         # Clear previous log if needed
-        open('test_execution.log', 'w').close()
+        open('logs/test_logs.log', 'w').close()
         
         logger.info("🚀 Starting Vacation Rental Website Automation Tests")
         logger.info("=" * 50)

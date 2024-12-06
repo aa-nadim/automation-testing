@@ -44,6 +44,17 @@ class VacationRentalTests:
         self.test_results.append(result)
         return result
     
+    
+    def generate_report(self):
+        """
+        Generate Excel report from collected test results
+        
+        Returns:
+        str: Path to generated report
+        """
+        from utils.report_generator import ReportGenerator
+        return ReportGenerator.generate_report(self.test_results)
+    
     def close(self):
         """
         Close the WebDriver
