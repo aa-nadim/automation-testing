@@ -44,6 +44,45 @@ class VacationRentalTests:
         self.test_results.append(result)
         return result
     
+    def test_html_tag_sequence(self, url):
+        """
+        Test HTML tag sequence for SEO best practices
+        
+        Args:
+        url (str): Page URL to test
+        
+        Returns:
+        dict: Test result
+        """
+        try:
+            self.driver.get(url)
+            
+            # Check for proper heading hierarchy
+            headings = self.driver.find_elements(By.CSS_SELECTOR, 'h1, h2, h3, h4, h5, h6')
+            heading_tags = [h.tag_name for h in headings]
+            
+            # Basic sequence check
+            is_valid_sequence = all(
+                int(tag[1]) <= int(next_tag[1]) 
+                for tag, next_tag in zip(heading_tags, heading_tags[1:])
+            )
+            
+            result = {
+                'page_url': url,
+                'testcase': 'HTML Tag Sequence',
+                'passed': is_valid_sequence,
+                'comments': 'Valid heading sequence' if is_valid_sequence else 'Improper heading hierarchy'
+            }
+        except Exception as e:
+            result = {
+                'page_url': url,
+                'testcase': 'HTML Tag Sequence',
+                'passed': False,
+                'comments': f'Error checking tag sequence: {str(e)}'
+            }
+        
+        self.test_results.append(result)
+        return result
     
     def generate_report(self):
         """

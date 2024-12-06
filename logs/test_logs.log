@@ -1,15 +1,19 @@
-2024-12-06 16:38:40,799 - INFO: 🚀 Starting Vacation Rental Website Automation Tests
-2024-12-06 16:38:40,799 - INFO: ==================================================
-2024-12-06 16:38:40,799 - INFO: ====== WebDriver manager ======
-2024-12-06 16:38:40,885 - INFO: Get LATEST chromedriver version for google-chrome
-2024-12-06 16:38:41,319 - INFO: Get LATEST chromedriver version for google-chrome
-2024-12-06 16:38:41,782 - INFO: Driver [/home/w3e12/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver] found in cache
-2024-12-06 16:38:42,445 - INFO: 
+2024-12-06 18:32:21,878 - INFO: 🚀 Starting Vacation Rental Website Automation Tests
+2024-12-06 18:32:21,879 - INFO: ==================================================
+2024-12-06 18:32:21,879 - INFO: ====== WebDriver manager ======
+2024-12-06 18:32:21,961 - INFO: Get LATEST chromedriver version for google-chrome
+2024-12-06 18:32:22,418 - INFO: Get LATEST chromedriver version for google-chrome
+2024-12-06 18:32:22,860 - INFO: Driver [/home/w3e12/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver] found in cache
+2024-12-06 18:32:23,532 - INFO: 
 📋 Running Test: H1 Tag Test
-2024-12-06 16:38:47,602 - INFO: ✅ PASSED: H1 Tag Test
-2024-12-06 16:38:47,603 - INFO: Comments: H1 tag found
-2024-12-06 16:38:47,603 - INFO: 
+2024-12-06 18:32:28,755 - INFO: ✅ PASSED: H1 Tag Test
+2024-12-06 18:32:28,755 - INFO: Comments: H1 tag found
+2024-12-06 18:32:28,755 - INFO: 
+📋 Running Test: HTML Tag Sequence Test
+2024-12-06 18:32:30,446 - INFO: ❌ FAILED: HTML Tag Sequence Test
+2024-12-06 18:32:30,446 - INFO: Comments: Improper heading hierarchy
+2024-12-06 18:32:30,446 - INFO: 
 📊 Generating Test Report...
-2024-12-06 16:38:48,058 - INFO: ✨ Test Report Generated: /home/w3e12/Desktop/Assignment-7/automation-testing/reports/vacation_rental_test_results.xlsx
-2024-12-06 16:38:48,058 - INFO: 
-🎉 All Tests Completed Successfully!
+2024-12-06 18:32:30,855 - INFO: ✨ Test Report Generated: /home/w3e12/Desktop/Assignment-7/automation-testing/reports/vacation_rental_test_results.xlsx
+2024-12-06 18:32:30,855 - WARNING: 
+⚠️ Some Tests Failed. Check the report for details.

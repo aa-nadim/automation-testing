@@ -36,6 +36,7 @@ def run_tests():
         # List of tests to run
         test_methods = [
             ('H1 Tag Test', rental_tests.test_h1_existence),
+            ('HTML Tag Sequence Test', rental_tests.test_html_tag_sequence),
         ]
         
         # Run each test and log results
