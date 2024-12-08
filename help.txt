@@ -4,10 +4,11 @@
   deactivate
   ________________________________________________________
 
-# Create the main project directory
-mkdir vacation_rental_testing
-cd vacation_rental_testing
 
+  pip install -r requirements.txt
+
+  __________________________________________________________
+  
 # Create subdirectories
 mkdir config drivers logs reports screenshots screenshots/failed_tests tests utils
 
@@ -38,4 +39,4 @@ touch utils/__init__.py utils/report_generator.py utils/web_driver.py
 
 ________________________________________________________
 
-pip install -r requirements.txt
+python main.py

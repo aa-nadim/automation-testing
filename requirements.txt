@@ -1,6 +1,4 @@
 selenium
-pandas
-openpyxl
-requests
 webdriver-manager
-pytest
+requests
+pandas

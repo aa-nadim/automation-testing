@@ -1,19 +1,145 @@
-2024-12-06 18:32:21,878 - INFO: 🚀 Starting Vacation Rental Website Automation Tests
-2024-12-06 18:32:21,879 - INFO: ==================================================
-2024-12-06 18:32:21,879 - INFO: ====== WebDriver manager ======
-2024-12-06 18:32:21,961 - INFO: Get LATEST chromedriver version for google-chrome
-2024-12-06 18:32:22,418 - INFO: Get LATEST chromedriver version for google-chrome
-2024-12-06 18:32:22,860 - INFO: Driver [/home/w3e12/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver] found in cache
-2024-12-06 18:32:23,532 - INFO: 
-📋 Running Test: H1 Tag Test
-2024-12-06 18:32:28,755 - INFO: ✅ PASSED: H1 Tag Test
-2024-12-06 18:32:28,755 - INFO: Comments: H1 tag found
-2024-12-06 18:32:28,755 - INFO: 
-📋 Running Test: HTML Tag Sequence Test
-2024-12-06 18:32:30,446 - INFO: ❌ FAILED: HTML Tag Sequence Test
-2024-12-06 18:32:30,446 - INFO: Comments: Improper heading hierarchy
-2024-12-06 18:32:30,446 - INFO: 
-📊 Generating Test Report...
-2024-12-06 18:32:30,855 - INFO: ✨ Test Report Generated: /home/w3e12/Desktop/Assignment-7/automation-testing/reports/vacation_rental_test_results.xlsx
-2024-12-06 18:32:30,855 - WARNING: 
-⚠️ Some Tests Failed. Check the report for details.
+2024-12-08 04:00:53,357 - INFO: ==================================================
+2024-12-08 04:00:53,357 - INFO: ====== WebDriver manager ======
+2024-12-08 04:00:54,341 - INFO: Get LATEST chromedriver version for google-chrome
+2024-12-08 04:00:54,673 - INFO: Get LATEST chromedriver version for google-chrome
+2024-12-08 04:00:54,927 - INFO: Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 04:00:58,458 - INFO: Comments: H1 tag found
+2024-12-08 04:01:00,700 - INFO: Comments: Improper heading hierarchy
+2024-12-08 04:01:02,532 - INFO: Comments: All images have alt attributes
+2024-12-08 04:01:31,130 - INFO: Comments: 128 broken URLs found: https://www.alojamiento.io/, https://www.alojamiento.io/, https://www.alojamiento.io/, https://x.com/StaysTravel, https://www.alojamiento.io/place-to-stay, https://www.alojamiento.io/near-me?all=true, https://www.alojamiento.io/addalisting, https://www.alojamiento.io/about-us, https://www.alojamiento.io/faq, https://www.alojamiento.io/all/spain/valencian-community/alicante, https://www.alojamiento.io/all/spain/catalonia/barcelona, https://www.alojamiento.io/all/spain/valencian-community/benidorm, https://www.alojamiento.io/all/spain/basque-country/bilbao, https://www.alojamiento.io/all/spain/andalusia/cordoba, https://www.alojamiento.io/all/spain/canary-islands/costa-adeje, https://www.alojamiento.io/all/spain/andalusia/costa-del-sol, https://www.alojamiento.io/all/spain/andalusia/granada, https://www.alojamiento.io/all/spain/community-of-madrid/madrid/ibiza, https://www.alojamiento.io/all/spain/community-of-madrid/madrid, https://www.alojamiento.io/all/spain/andalusia/malaga, https://www.alojamiento.io/all/spain/balearic-islands/mallorca-island, https://www.alojamiento.io/all/spain/andalusia/marbella, https://www.alojamiento.io/all/spain/canary-islands/san-bartolome-de-tirajana/maspalomas, https://www.alojamiento.io/all/spain/catalonia/salou, https://www.alojamiento.io/all/spain/san-sebastian, https://www.alojamiento.io/all/spain/andalusia/seville, https://www.alojamiento.io/all/spain/castilla-la-mancha/toledo, https://www.alojamiento.io/all/spain/andalusia/torremolinos, https://www.alojamiento.io/all/spain/valencian-community/valencia, https://www.alojamiento.io/all/spain/aragon/zaragoza, https://www.alojamiento.io/all/spain/community-of-madrid/madrid, https://www.alojamiento.io/all/spain/catalonia/barcelona, https://www.alojamiento.io/all/spain/andalusia/seville, https://www.alojamiento.io/all/spain/valencian-community/valencia, https://www.alojamiento.io/all/spain/basque-country/bilbao, https://www.alojamiento.io/all/spain/valencian-community/alicante, https://www.alojamiento.io/all/spain/balearic-islands/palma-de-mallorca, https://www.alojamiento.io/all/spain/balearic-islands/menorca, https://www.alojamiento.io/all/hotels, https://www.alojamiento.io/all/portugal/lisbon-district/lisbon, https://www.alojamiento.io/all/spain/andalusia/seville, https://www.alojamiento.io/all/andorra/andorra-la-vella/andorra-la-vella, https://www.alojamiento.io/all/morocco/marrakech-safi/marrakech, https://www.alojamiento.io/all/spain/valencian-community/benidorm, https://www.alojamiento.io/all/portugal/algarve, https://www.alojamiento.io/all/spain/balearic-islands/palma-de-mallorca, https://www.alojamiento.io/all/france/provence, https://www.alojamiento.io/all/italy/veneto/venice, https://www.alojamiento.io/all/spain/basque-country/bilbao, https://www.alojamiento.io/all/spain/catalonia/barcelona, https://www.alojamiento.io/all/spain/community-of-madrid/madrid, https://www.alojamiento.io/all/turkey/istanbul, https://www.alojamiento.io/all/portugal/porto-district/porto, https://www.alojamiento.io/place-to-stay, https://www.alojamiento.io/all/france/paris, https://www.alojamiento.io/all/portugal, https://www.alojamiento.io/all/italy, https://www.alojamiento.io/all/mexico, https://www.alojamiento.io/all/switzerland, https://www.alojamiento.io/all/greece, https://www.alojamiento.io/all/resorts, https://www.alojamiento.io/, https://www.alojamiento.io/addalisting, https://www.alojamiento.io/about-us, https://www.alojamiento.io/faq, https://www.alojamiento.io/all/spain/cantabria, https://www.alojamiento.io/all/spain/community-of-madrid/madrid, https://www.alojamiento.io/all/spain/catalonia, https://www.alojamiento.io/all/spain/galicia, https://www.alojamiento.io/all/spain/andalusia/malaga, https://www.alojamiento.io/all/spain/navarre, https://www.alojamiento.io/all/spain/canary-islands/gran-canaria, https://www.alojamiento.io/all/spain/canary-islands/tenerife, https://www.alojamiento.io/all/usa/wyoming/basin, https://www.alojamiento.io/all/spain/castile-and-leon, https://www.alojamiento.io/all/spain/murcia, https://www.alojamiento.io/all/spain/valencian-community/valencia-province, https://www.alojamiento.io/all/spain/andalusia, https://www.alojamiento.io/all/spain/canary-islands, https://www.alojamiento.io/all/spain/balearic-islands, https://www.alojamiento.io/all/switzerland, https://www.alojamiento.io/all/spain/community-of-madrid/madrid, https://www.alojamiento.io/all/spain/catalonia/costa-brava, https://www.alojamiento.io/all/italy, https://www.alojamiento.io/all/france, https://www.alojamiento.io/all/mexico, https://www.alojamiento.io/all/morocco, https://www.alojamiento.io/all/andorra, https://www.alojamiento.io/all/greece, https://www.alojamiento.io/all/mexico/quintana-roo/cancun, https://www.alojamiento.io/all/dominican-republic/la-altagracia/punta-cana, https://www.alojamiento.io/all/mexico/quintana-roo/playa-del-carmen, https://www.alojamiento.io/all/puerto-rico/san-juan, https://www.alojamiento.io/all/cuba/province-of-havana, https://www.alojamiento.io/all/mexico/jalisco/puerto-vallarta, https://www.alojamiento.io/all/mexico/baja-california-sur/cabo-san-lucas, https://www.alojamiento.io/all/brazil/southeast-region/rio-de-janeiro, https://www.alojamiento.io/all/argentina/buenos-aires, https://www.alojamiento.io/all/mexico/quintana-roo/tulum, https://www.alojamiento.io/all/colombia/medellin, https://www.alojamiento.io/all/colombia/bolivar/cartagena, https://www.alojamiento.io/all/peru/lima, https://www.alojamiento.io/all/chile/santiago-metropolitan/santiago, https://www.alojamiento.io/all/costa-rica/san-jose, https://www.alojamiento.io/all/uruguay/montevideo, https://www.alojamiento.io/all/panama/panama/panama-city, https://www.alojamiento.io/all/brazil/south-region/florianopolis, https://www.alojamiento.io/all/ecuador/pichincha/quito, https://www.alojamiento.io/all/guatemala/sacatepequez/antigua-guatemala, https://www.alojamiento.io/all/brazil/northeast-region/salvador, https://www.alojamiento.io/all/peru/cusco/cusco, https://www.alojamiento.io/all/honduras/bay-islands/roatan, https://www.alojamiento.io/all/bolivia/la-paz, https://www.alojamiento.io/all/ecuador/galapagos, https://www.alojamiento.io/all/mexico/guanajuato/san-miguel-de-allende, https://www.alojamiento.io/all/argentina/mendoza, https://www.alojamiento.io/all/colombia/magdalena/santa-marta, https://www.alojamiento.io/all/belize/belize-district/belize-city, https://www.alojamiento.io/all/argentina/rio-negro/san-carlos-de-bariloche, https://x.com/StaysTravel, https://www.alojamiento.io/privacy-policy, https://www.alojamiento.io/site-terms, https://www.alojamiento.io/site-map, https://www.alojamiento.io/, https://www.travelai.com/, https://www.alojamiento.io/privacy-policy#site-cookie-policy, https://www.petfriendly.io/, https://www.alojamiento.io/site-terms
+2024-12-08 10:37:51,516 - INFO - Starting test suite execution.
+2024-12-08 10:37:51,516 - INFO - ====== WebDriver manager ======
+2024-12-08 10:37:53,733 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 10:37:54,091 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 10:37:54,348 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 10:37:54,349 - ERROR - H1 Tag Test failed: WebDriver.__init__() got multiple values for argument 'options'
+2024-12-08 10:37:54,349 - INFO - Generating test report.
+2024-12-08 10:49:37,624 - INFO - Starting test suite.
+2024-12-08 10:49:37,624 - INFO - Starting H1 tag test.
+2024-12-08 10:49:37,624 - INFO - ====== WebDriver manager ======
+2024-12-08 10:49:38,559 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 10:49:38,948 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 10:49:39,296 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 10:49:42,360 - INFO - Accessed URL: https://www.alojamiento.io/
+2024-12-08 10:49:42,403 - INFO - H1 tag found with text: 403 ERROR
+2024-12-08 10:49:44,730 - INFO - H1 tag test completed.
+2024-12-08 10:49:44,731 - INFO - Test suite completed.
+2024-12-08 10:50:42,019 - INFO - Starting test suite.
+2024-12-08 10:50:42,019 - INFO - Starting H1 tag test.
+2024-12-08 10:50:42,019 - INFO - ====== WebDriver manager ======
+2024-12-08 10:50:42,895 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 10:50:43,192 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 10:50:43,535 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 10:50:45,636 - INFO - Accessed URL: https://www.alojamiento.io/
+2024-12-08 10:50:45,667 - INFO - H1 tag found with text: 403 ERROR
+2024-12-08 10:50:47,968 - INFO - H1 tag test completed.
+2024-12-08 10:50:47,969 - INFO - Test suite completed.
+2024-12-08 10:53:15,057 - INFO - Starting test suite.
+2024-12-08 10:53:15,057 - INFO - Starting H1 tag test.
+2024-12-08 10:53:15,057 - INFO - ====== WebDriver manager ======
+2024-12-08 10:53:15,966 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 10:53:16,281 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 10:53:16,554 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 10:53:18,522 - INFO - Accessed URL: https://www.alojamiento.io/
+2024-12-08 10:53:18,559 - INFO - H1 tag found with text: 403 ERROR
+2024-12-08 10:53:20,867 - INFO - H1 tag test completed.
+2024-12-08 10:53:24,957 - INFO - Test suite completed.
+2024-12-08 10:54:07,631 - INFO - Starting test suite.
+2024-12-08 10:54:07,631 - INFO - Starting H1 tag test.
+2024-12-08 10:54:07,631 - INFO - ====== WebDriver manager ======
+2024-12-08 10:54:08,510 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 10:54:08,828 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 10:54:09,094 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 10:54:10,910 - INFO - Accessed URL: https://www.alojamiento.io/
+2024-12-08 10:54:10,938 - INFO - H1 tag found with text: 403 ERROR
+2024-12-08 10:54:13,313 - INFO - H1 tag test completed.
+2024-12-08 10:54:17,391 - INFO - Test suite completed.
+2024-12-08 11:26:06,618 - INFO - Test suite started.
+2024-12-08 11:26:06,619 - INFO - Starting H1 tag test.
+2024-12-08 11:26:06,619 - INFO - ====== WebDriver manager ======
+2024-12-08 11:26:07,579 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 11:26:07,902 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 11:26:08,247 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 11:26:10,157 - INFO - Accessed URL: https://www.alojamiento.io/
+2024-12-08 11:26:10,195 - INFO - H1 tag found with text: 403 ERROR
+2024-12-08 11:26:12,510 - INFO - H1 tag test completed.
+2024-12-08 11:26:12,511 - INFO - H1 Tag Test result: {'url': 'https://www.alojamiento.io/', 'test_name': 'H1 Tag Test', 'result': 'Pass', 'details': 'H1 tag is valid.'}
+2024-12-08 11:26:16,578 - INFO - Results saved to Excel.
+2024-12-08 11:26:16,578 - INFO - Test suite completed successfully.
+2024-12-08 11:31:32,075 - INFO - Test suite started.
+2024-12-08 11:31:32,076 - ERROR - Error running H1 Tag Test: test_h1_tag() takes 0 positional arguments but 1 was given
+2024-12-08 11:31:32,097 - INFO - Results saved to Excel.
+2024-12-08 11:31:32,098 - INFO - Test suite completed successfully.
+2024-12-08 11:32:04,606 - INFO - Test suite started.
+2024-12-08 11:32:04,607 - ERROR - Error running H1 Tag Test: test_h1_tag() takes 0 positional arguments but 1 was given
+2024-12-08 11:32:04,609 - ERROR - Error saving results to Excel: Failed to save results to Excel: [Errno 13] Permission denied: 'C:\\Users\\ASUS\\Desktop\\a-7\\automation-testing\\reports\\test_results.xlsx'
+2024-12-08 11:32:04,610 - INFO - Test suite completed successfully.
+2024-12-08 11:39:08,240 - INFO - Test suite started.
+2024-12-08 11:39:08,241 - INFO - Starting H1 tag test.
+2024-12-08 11:39:08,241 - INFO - ====== WebDriver manager ======
+2024-12-08 11:39:09,242 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 11:39:09,636 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 11:39:09,901 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 11:39:11,863 - INFO - Accessed URL: https://www.alojamiento.io/
+2024-12-08 11:39:11,903 - INFO - H1 tag found with text: 403 ERROR
+2024-12-08 11:39:14,208 - INFO - H1 tag test completed.
+2024-12-08 11:39:14,212 - ERROR - Error saving results to Excel: Failed to save results to Excel: [Errno 13] Permission denied: 'C:\\Users\\ASUS\\Desktop\\a-7\\automation-testing\\reports\\test_results.xlsx'
+2024-12-08 11:39:14,212 - INFO - Test suite completed successfully.
+2024-12-08 12:05:20,493 - INFO - Starting test execution.
+2024-12-08 12:05:20,493 - INFO - Starting H1 tag test.
+2024-12-08 12:05:20,493 - INFO - ====== WebDriver manager ======
+2024-12-08 12:05:21,439 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 12:05:21,441 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 12:05:21,730 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 12:05:21,740 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 12:05:21,743 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 12:05:21,994 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 12:05:21,997 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 12:05:21,998 - ERROR - An error occurred: WebDriver.__init__() got multiple values for argument 'options'
+2024-12-08 12:05:22,281 - INFO - Test execution completed.
+2024-12-08 12:10:02,631 - INFO - Starting test execution.
+2024-12-08 12:10:02,632 - INFO - Starting H1 tag test.
+2024-12-08 12:10:02,632 - INFO - ====== WebDriver manager ======
+2024-12-08 12:10:03,528 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 12:10:03,529 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 12:10:03,817 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 12:10:03,824 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 12:10:03,825 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 12:10:04,079 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 12:10:04,087 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 12:10:04,088 - ERROR - An error occurred: WebDriver.__init__() got multiple values for argument 'options'
+2024-12-08 12:12:23,769 - INFO - Starting test execution.
+2024-12-08 12:12:23,769 - INFO - Starting H1 tag test.
+2024-12-08 12:12:23,770 - INFO - ====== WebDriver manager ======
+2024-12-08 12:12:24,656 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 12:12:24,658 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 12:12:24,959 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 12:12:24,965 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 12:12:24,967 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 12:12:25,217 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 12:12:25,221 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 12:12:25,221 - ERROR - An error occurred: WebDriver.__init__() got multiple values for argument 'options'
+2024-12-08 12:13:33,505 - INFO - Starting test execution.
+2024-12-08 12:13:33,505 - INFO - Starting H1 tag test.
+2024-12-08 12:13:33,505 - INFO - ====== WebDriver manager ======
+2024-12-08 12:13:34,389 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 12:13:34,392 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 12:13:34,794 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 12:13:34,803 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 12:13:34,807 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 12:13:35,059 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 12:13:35,064 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 12:13:35,064 - ERROR - An error occurred: WebDriver.__init__() got multiple values for argument 'options'
+2024-12-08 12:13:35,311 - INFO - Test execution completed.
+2024-12-08 12:13:51,330 - INFO - Starting test execution.
+2024-12-08 12:13:51,331 - INFO - Starting H1 tag test.
+2024-12-08 12:13:51,331 - INFO - ====== WebDriver manager ======
+2024-12-08 12:13:52,208 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 12:13:52,211 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 12:13:52,533 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 12:13:52,543 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 12:13:52,546 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 12:13:52,794 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 12:13:52,800 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 12:13:52,801 - ERROR - An error occurred: WebDriver.__init__() got multiple values for argument 'options'
+2024-12-08 12:13:53,074 - INFO - Test execution completed.
