@@ -8,6 +8,7 @@ from tests.test_h1_tag import test_h1_tag
 from tests.test_html_tag_sequence import test_html_tag_sequence
 from tests.test_image_alt_attribute import test_image_alt_attribute
 from tests.test_url_status import test_url_status 
+from tests.test_currency_filter import test_currency_filter
 
 from config.config import PROPERTY_URL  # Import the property URL from config
 
@@ -42,6 +43,8 @@ def main():
         run_test(driver, PROPERTY_URL, test_image_alt_attribute, "Image alt attribute test")
         # Run the URL status test
         run_test(driver, PROPERTY_URL, test_url_status, "URL status code test")
+        # Run the Currency filter test
+        run_test(driver, PROPERTY_URL, test_currency_filter, "Currency filter test")
 
         print("Test execution complete.")
 
