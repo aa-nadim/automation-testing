@@ -4,6 +4,7 @@ import logging
 from utils.driver_setup import setup_driver
 from utils.test_utils import run_test
 from tests.test_h1_tag import test_h1_tag
+from tests.test_html_tag_sequence import test_html_tag_sequence
 from config.config import PROPERTY_URL  # Import the property URL from config
 
 # Configure logging for better visibility
@@ -27,8 +28,13 @@ def main():
         print("WebDriver setup complete.")
 
         # Run the H1 tag existence test
-        print(f"Running H1 tag existence test on URL: {PROPERTY_URL}")
+        print(f"Running test on URL: {PROPERTY_URL}")
+
+        # Run the H1 tag existence test
         run_test(driver, PROPERTY_URL, test_h1_tag, "H1 tag existence test")
+        # Run the HTML tag sequence test
+        run_test(driver, PROPERTY_URL, test_html_tag_sequence, "HTML tag sequence test")
+
         print("Test execution complete.")
 
     except Exception as e:
