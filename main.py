@@ -3,9 +3,12 @@
 import logging
 from utils.driver_setup import setup_driver
 from utils.test_utils import run_test
+
 from tests.test_h1_tag import test_h1_tag
 from tests.test_html_tag_sequence import test_html_tag_sequence
 from tests.test_image_alt_attribute import test_image_alt_attribute
+from tests.test_url_status import test_url_status 
+
 from config.config import PROPERTY_URL  # Import the property URL from config
 
 # Configure logging for better visibility
@@ -37,6 +40,8 @@ def main():
         run_test(driver, PROPERTY_URL, test_html_tag_sequence, "HTML tag sequence test")
         # Run the Image alt attribute test
         run_test(driver, PROPERTY_URL, test_image_alt_attribute, "Image alt attribute test")
+        # Run the URL status test
+        run_test(driver, PROPERTY_URL, test_url_status, "URL status code test")
 
         print("Test execution complete.")
 
