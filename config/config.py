@@ -6,6 +6,8 @@ BASE_URL = "https://www.alojamiento.io"
 # Specific URL to test the property page
 PROPERTY_URL = "https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317"
 
+
+# https://www.alojamiento.io/property/apartamentos-centro-col%c3%b3n/BC-189483
 # Report file path
 REPORT_FILE_PATH = "reports/test_report.csv"
 

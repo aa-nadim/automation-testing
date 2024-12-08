@@ -143,3 +143,71 @@
 2024-12-08 12:13:52,800 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
 2024-12-08 12:13:52,801 - ERROR - An error occurred: WebDriver.__init__() got multiple values for argument 'options'
 2024-12-08 12:13:53,074 - INFO - Test execution completed.
+2024-12-08 13:46:08,293 - INFO - Setting up WebDriver...
+2024-12-08 13:46:08,293 - INFO - ====== WebDriver manager ======
+2024-12-08 13:46:09,202 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 13:46:09,202 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 13:46:09,470 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 13:46:09,485 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 13:46:09,485 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 13:46:09,749 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 13:46:09,749 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 13:46:09,749 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe
+2024-12-08 13:46:09,762 - DEBUG - Started executable: `C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe` in a child process with pid: 11408 using 0 to output -3
+2024-12-08 13:46:10,269 - DEBUG - POST http://localhost:58448/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2024-12-08 13:46:10,269 - DEBUG - Starting new HTTP connection (1): localhost:58448
+2024-12-08 13:46:11,042 - DEBUG - http://localhost:58448 "POST /session HTTP/11" 200 0
+2024-12-08 13:46:11,043 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.109","chrome":{"chromedriverVersion":"131.0.6778.87 (ce31cae9487357cfd3bd62984ed5250121a71a23-refs/branch-heads/6778@{#2287})","userDataDir":"C:\\Users\\ASUS\\AppData\\Local\\Temp\\scoped_dir11408_569519222"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:58452"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"628479c75ea184aa1b5ef0ad330c2ae6"}} | headers=HTTPHeaderDict({'Content-Length': '881', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-08 13:46:11,043 - DEBUG - Finished Request
+2024-12-08 13:46:11,043 - INFO - Running test: H1 tag existence test on https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317
+2024-12-08 13:46:11,051 - DEBUG - POST http://localhost:58448/session/628479c75ea184aa1b5ef0ad330c2ae6/url {'url': 'https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317'}
+2024-12-08 13:46:13,830 - DEBUG - http://localhost:58448 "POST /session/628479c75ea184aa1b5ef0ad330c2ae6/url HTTP/11" 200 0
+2024-12-08 13:46:13,832 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-08 13:46:13,833 - DEBUG - Finished Request
+2024-12-08 13:46:13,834 - INFO - Checking for <h1> tag...
+2024-12-08 13:46:13,834 - DEBUG - POST http://localhost:58448/session/628479c75ea184aa1b5ef0ad330c2ae6/elements {'using': 'tag name', 'value': 'h1'}
+2024-12-08 13:46:13,850 - DEBUG - http://localhost:58448 "POST /session/628479c75ea184aa1b5ef0ad330c2ae6/elements HTTP/11" 200 0
+2024-12-08 13:46:13,850 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.B8431F3220FD4B8A51E02B0B5F32682F.d.36C8943AEEFB3453AB438BB458429A5A.e.63"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-08 13:46:13,851 - DEBUG - Finished Request
+2024-12-08 13:46:13,851 - INFO - H1 tag exists.
+2024-12-08 13:46:13,853 - INFO - Test result for H1 tag existence test: PASS. Comments: H1 tag exists
+2024-12-08 13:46:13,854 - INFO - Closing the WebDriver...
+2024-12-08 13:46:13,854 - DEBUG - DELETE http://localhost:58448/session/628479c75ea184aa1b5ef0ad330c2ae6 {}
+2024-12-08 13:46:14,060 - DEBUG - http://localhost:58448 "DELETE /session/628479c75ea184aa1b5ef0ad330c2ae6 HTTP/11" 200 0
+2024-12-08 13:46:14,060 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-08 13:46:14,060 - DEBUG - Finished Request
+2024-12-08 13:57:47,075 - INFO - Setting up WebDriver...
+2024-12-08 13:57:47,075 - INFO - ====== WebDriver manager ======
+2024-12-08 13:57:47,965 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 13:57:47,968 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 13:57:48,274 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 13:57:48,289 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-08 13:57:48,290 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-08 13:57:48,549 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8590
+2024-12-08 13:57:48,549 - INFO - Driver [C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe] found in cache
+2024-12-08 13:57:48,564 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe
+2024-12-08 13:57:48,570 - DEBUG - Started executable: `C:\Users\ASUS\.wdm\drivers\chromedriver\win64\131.0.6778.87\chromedriver-win32/chromedriver.exe` in a child process with pid: 4856 using 0 to output -3
+2024-12-08 13:57:49,087 - DEBUG - POST http://localhost:58529/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+2024-12-08 13:57:49,088 - DEBUG - Starting new HTTP connection (1): localhost:58529
+2024-12-08 13:57:49,799 - DEBUG - http://localhost:58529 "POST /session HTTP/11" 200 0
+2024-12-08 13:57:49,800 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.109","chrome":{"chromedriverVersion":"131.0.6778.87 (ce31cae9487357cfd3bd62984ed5250121a71a23-refs/branch-heads/6778@{#2287})","userDataDir":"C:\\Users\\ASUS\\AppData\\Local\\Temp\\scoped_dir4856_1295708225"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:58533"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"7f0f7f47d6aee5e470f2182802facf88"}} | headers=HTTPHeaderDict({'Content-Length': '881', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-08 13:57:49,801 - DEBUG - Finished Request
+2024-12-08 13:57:49,802 - INFO - Running test: H1 tag existence test on https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317
+2024-12-08 13:57:49,803 - DEBUG - POST http://localhost:58529/session/7f0f7f47d6aee5e470f2182802facf88/url {'url': 'https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317'}
+2024-12-08 13:57:52,625 - DEBUG - http://localhost:58529 "POST /session/7f0f7f47d6aee5e470f2182802facf88/url HTTP/11" 200 0
+2024-12-08 13:57:52,627 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-08 13:57:52,627 - DEBUG - Finished Request
+2024-12-08 13:57:52,628 - INFO - Checking for <h1> tag...
+2024-12-08 13:57:52,629 - DEBUG - POST http://localhost:58529/session/7f0f7f47d6aee5e470f2182802facf88/elements {'using': 'tag name', 'value': 'h1'}
+2024-12-08 13:57:52,647 - DEBUG - http://localhost:58529 "POST /session/7f0f7f47d6aee5e470f2182802facf88/elements HTTP/11" 200 0
+2024-12-08 13:57:52,648 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.650CDB634A6CE8A5BEF89920B375E8DD.d.CE0AB5697BACCDB30177DB9957B3A44D.e.60"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-08 13:57:52,649 - DEBUG - Finished Request
+2024-12-08 13:57:52,649 - INFO - H1 tag exists.
+2024-12-08 13:57:52,650 - INFO - Created new report file with header.
+2024-12-08 13:57:52,651 - INFO - Appended test result for H1 tag existence test.
+2024-12-08 13:57:52,653 - INFO - Test result for H1 tag existence test: PASS. Comments: H1 tag exists
+2024-12-08 13:57:52,655 - INFO - Closing the WebDriver...
+2024-12-08 13:57:52,655 - DEBUG - DELETE http://localhost:58529/session/7f0f7f47d6aee5e470f2182802facf88 {}
+2024-12-08 13:57:52,777 - DEBUG - http://localhost:58529 "DELETE /session/7f0f7f47d6aee5e470f2182802facf88 HTTP/11" 200 0
+2024-12-08 13:57:52,777 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-08 13:57:52,779 - DEBUG - Finished Request
