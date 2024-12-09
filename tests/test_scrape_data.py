@@ -8,12 +8,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from config.config import BASE_URL  # Import BASE_URL from config file
+from config.config import BASE_URL  
 
 # Function to initialize the browser
 def init_browser():
     options = Options()
-    options.add_argument('--headless')
+    # options.add_argument('--headless')
     options.add_argument('--disable-gpu')
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
