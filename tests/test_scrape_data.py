@@ -8,7 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from config.config import BASE_URL  
+from config.config import BASE_URL
 
 # Function to initialize the browser
 def init_browser():
@@ -56,14 +56,25 @@ def scrape_console_data(script_to_run):
             "IP": user_info.get('IP', 'N/A')
         }
 
-        # Create the DataFrame to save the data to CSV
+        # Create the DataFrame to save the data to Excel
         df = pd.DataFrame([data])
 
-        # Check if the file already exists to decide whether to include the header
-        file_exists = os.path.isfile('reports/scraped_data.csv')
+        # Define the Excel file path
+        file_path = 'reports/scraped_data.xlsx'
 
-        # Save the data to a CSV file with the header included only if the file doesn't already exist
-        df.to_csv('reports/scraped_data.csv', mode='a', header=not file_exists, index=False)
+        # Check if the file already exists to decide whether to create a new file or append to the existing one
+        if os.path.isfile(file_path):
+            # Append to existing Excel file
+            with pd.ExcelWriter(file_path, mode='a', engine='openpyxl', if_sheet_exists='overlay') as writer:
+                # Get the current row count to append new rows
+                sheet_name = 'ScrapedData'
+                start_row = writer.sheets[sheet_name].max_row if sheet_name in writer.sheets else 0
+                df.to_excel(writer, index=False, header=start_row == 0, startrow=start_row, sheet_name=sheet_name)
+        else:
+            # Create a new Excel file and write data
+            with pd.ExcelWriter(file_path, engine='openpyxl') as writer:
+                df.to_excel(writer, index=False, sheet_name='ScrapedData')
+
         print(f"Data saved for {url}")
 
     except Exception as e:
@@ -76,7 +87,7 @@ def scrape_console_data(script_to_run):
 def run_tests():
     script_to_run = "return window.ScriptData;"  # Corrected the case to match the console variable
     
-    # Perform the scraping and save data to CSV
+    # Perform the scraping and save data to Excel
     scrape_console_data(script_to_run)
 
 # Execute the test

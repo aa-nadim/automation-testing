@@ -1,5 +1,0 @@
-page_url,testcase,status,comments
-https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317,H1 tag existence test,PASS,H1 tag exists
-https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317,HTML tag sequence test,FAIL,Sequence broken: <h5> is missing
-https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317,Image alt attribute test,PASS,All images have alt attributes.
-https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317,URL status code test,PASS,All URLs returned valid status codes.
