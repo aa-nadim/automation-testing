@@ -63,7 +63,7 @@ def main():
         script_to_run = "return window.ScriptData;"  
         scrape_console_data(script_to_run)
 
-        driver.save_screenshot("final_test_state.png")
+        driver.save_screenshot("screenshots/final_test_state.png")
         print("Test execution complete.")
 
     except Exception as e:
