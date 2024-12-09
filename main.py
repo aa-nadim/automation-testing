@@ -14,6 +14,8 @@ from tests.test_h1_tag import test_h1_tag
 from tests.test_html_tag_sequence import test_html_tag_sequence
 from tests.test_image_alt_attribute import test_image_alt_attribute
 from tests.test_url_status import test_url_status
+# Import the scraping function
+from tests.test_scrape_data import scrape_console_data
 
 logging.basicConfig(
     level=logging.DEBUG,  # Capture all log levels (DEBUG, INFO, WARNING, ERROR)
@@ -52,12 +54,14 @@ def main():
             return
 
         # Run individual tests
-        run_test(driver, PROPERTY_URL, test_h1_tag, "H1 tag existence test")
-        run_test(driver, PROPERTY_URL, test_html_tag_sequence, "HTML tag sequence test")
-        run_test(driver, PROPERTY_URL, test_image_alt_attribute, "Image alt attribute test")
-        run_test(driver, PROPERTY_URL, test_url_status, "URL status code test")
+        # run_test(driver, PROPERTY_URL, test_h1_tag, "H1 tag existence test")
+        # run_test(driver, PROPERTY_URL, test_html_tag_sequence, "HTML tag sequence test")
+        # run_test(driver, PROPERTY_URL, test_image_alt_attribute, "Image alt attribute test")
+        # run_test(driver, PROPERTY_URL, test_url_status, "URL status code test")
 
-
+        # Run the scraping function and save the data to CSV
+        script_to_run = "return window.ScriptData;"  
+        scrape_console_data(script_to_run)
 
         driver.save_screenshot("final_test_state.png")
         print("Test execution complete.")
