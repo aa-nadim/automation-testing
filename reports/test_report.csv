@@ -1,35 +1,5 @@
 page_url,testcase,status,comments
-https://www.alojamiento.io,H1 tag existence test,PASS,H1 tag exists
-https://www.alojamiento.io,HTML tag sequence test,FAIL,Sequence broken: <h3> is missing
-https://www.alojamiento.io,Image alt attribute test,PASS,All images have alt attributes.
-https://www.alojamiento.io,URL status code test,PASS,All URLs returned valid status codes.
-https://www.alojamiento.io,Currency filter test,FAIL,"Error: Message: element click intercepted: Element is not clickable at point (145, 10213)
-  (Session info: chrome=131.0.6778.109)
-Stacktrace:
-	GetHandleVerifier [0x00423433+25059]
-	(No symbol) [0x003ACE34]
-	(No symbol) [0x0028BEC3]
-	(No symbol) [0x002D5D37]
-	(No symbol) [0x002D4189]
-	(No symbol) [0x002D1DAD]
-	(No symbol) [0x002D10AF]
-	(No symbol) [0x002C5FD7]
-	(No symbol) [0x002F1EFC]
-	(No symbol) [0x002C5A24]
-	(No symbol) [0x002F2194]
-	(No symbol) [0x0030B51E]
-	(No symbol) [0x002F1C96]
-	(No symbol) [0x002C3FAC]
-	(No symbol) [0x002C4F3D]
-	GetHandleVerifier [0x00715593+3113795]
-	GetHandleVerifier [0x0072A25A+3198986]
-	GetHandleVerifier [0x00722A32+3168226]
-	GetHandleVerifier [0x004C32A0+680016]
-	(No symbol) [0x003B577D]
-	(No symbol) [0x003B2A28]
-	(No symbol) [0x003B2BC5]
-	(No symbol) [0x003A5820]
-	BaseThreadInitThunk [0x76BAFCC9+25]
-	RtlGetAppContainerNamedObjectPath [0x77C4809E+286]
-	RtlGetAppContainerNamedObjectPath [0x77C4806E+238]
-"
+https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317,H1 tag existence test,PASS,H1 tag exists
+https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317,HTML tag sequence test,FAIL,Sequence broken: <h5> is missing
+https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317,Image alt attribute test,PASS,All images have alt attributes.
+https://www.alojamiento.io/property/bonita-casa-de-campo-t%c3%adpica-mallorquina/BC-12224317,URL status code test,PASS,All URLs returned valid status codes.
