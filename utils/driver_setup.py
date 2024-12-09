@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 
-def setup_driver(headless=True):
+def setup_driver(headless=False):
     """Set up and return the WebDriver instance."""
     chrome_options = Options()
     if headless:

@@ -1,5 +1,5 @@
 # main.py
-
+import os
 import logging
 import traceback
 from selenium.webdriver.common.by import By
@@ -14,11 +14,13 @@ from tests.test_h1_tag import test_h1_tag
 from tests.test_html_tag_sequence import test_html_tag_sequence
 from tests.test_image_alt_attribute import test_image_alt_attribute
 from tests.test_url_status import test_url_status
-# Import the scraping function
 from tests.test_scrape_data import scrape_console_data
+from tests.test_currency_filter import run_currency_filter_test  
+
+os.makedirs("logs", exist_ok=True)
 
 logging.basicConfig(
-    level=logging.DEBUG,  # Capture all log levels (DEBUG, INFO, WARNING, ERROR)
+    level=logging.DEBUG,
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
         logging.FileHandler("logs/test_logs.log"),
@@ -33,7 +35,6 @@ def main():
         print("Starting test execution...")
         logging.info("Setting up WebDriver...")
 
-        logging.info("Setting up WebDriver...")
         driver = setup_driver(headless=False)  
         driver.maximize_window()  
 
@@ -41,7 +42,6 @@ def main():
         print(f"Navigating to: {PROPERTY_URL}")
         driver.get(PROPERTY_URL)
 
-        # Wait for page to load
         try:
             WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located((By.TAG_NAME, 'body'))
@@ -60,8 +60,12 @@ def main():
         # run_test(driver, PROPERTY_URL, test_url_status, "URL status code test")
 
         # Run the scraping function and save the data to CSV
-        script_to_run = "return window.ScriptData;"  
-        scrape_console_data(script_to_run)
+        # script_to_run = "return window.ScriptData;"  
+        # scrape_console_data(script_to_run)
+
+        # Run the test from test.py
+        results = run_currency_filter_test(driver)
+        print("Currency filter test results:", results)
 
         driver.save_screenshot("screenshots/final_test_state.png")
         print("Test execution complete.")

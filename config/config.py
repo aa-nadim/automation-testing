@@ -6,6 +6,3 @@ LOG_FILE_PATH = "logs/test_logs.log"
 SCREENSHOT_DIR = "screenshots/"
 REPORT_FILE_PATH = "reports/test_report.csv"
 
-
-
-REPORT_FILE_PATH2 = "reports/test_results.csv"
