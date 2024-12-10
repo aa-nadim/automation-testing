@@ -32,7 +32,7 @@ def main():
     try:
         logging.info("Starting test execution...")
 
-        driver = setup_driver(headless=False)
+        driver = setup_driver(headless=True)
         driver.maximize_window()
 
         # Navigate to the test URL
