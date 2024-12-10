@@ -5,10 +5,8 @@ import traceback
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
 from utils.driver_setup import setup_driver
 from config.config import PROPERTY_URL
-
 from tests.test_h1_tag import run_h1_tag_test
 from tests.test_html_tag_sequence import run_html_tag_sequence_test
 from tests.test_image_alt_attribute import run_image_alt_attribute_test
@@ -32,7 +30,7 @@ def main():
     try:
         logging.info("Starting test execution...")
 
-        driver = setup_driver(headless=True)
+        driver = setup_driver(headless=False)
         driver.maximize_window()
 
         # Navigate to the test URL
@@ -51,18 +49,17 @@ def main():
             return
 
 
-        run_h1_tag_test(driver,PROPERTY_URL)
-        run_html_tag_sequence_test(driver,PROPERTY_URL)
-        run_image_alt_attribute_test(driver,PROPERTY_URL)
-        run_url_status_test(driver,PROPERTY_URL)
+        run_h1_tag_test(driver, PROPERTY_URL)
+        run_html_tag_sequence_test(driver, PROPERTY_URL)
+        run_image_alt_attribute_test(driver, PROPERTY_URL)
+        run_url_status_test(driver, PROPERTY_URL)
+        run_currency_filter_test(driver, PROPERTY_URL)
 
         script_to_run = "return window.ScriptData;"  
         scrape_console_data(script_to_run)
         
-        run_currency_filter_test(driver)
 
-
-        screenshot_path = "screenshots/final_test_state.png"
+        screenshot_path = "screenshots/after_test_state.png"
         os.makedirs("screenshots", exist_ok=True)
         driver.save_screenshot(screenshot_path)
 

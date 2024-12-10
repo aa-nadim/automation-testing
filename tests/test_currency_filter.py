@@ -4,13 +4,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import TimeoutException, StaleElementReferenceException
-from config.config import PROPERTY_URL
 
 from utils.driver_setup import setup_driver
 from utils.test_utils import generate_report
 import time
 
-def run_currency_filter_test(driver):
+def run_currency_filter_test(driver, page_url):
     """
     Robust test to ensure property tile currency changes when selecting different currencies.
     
@@ -20,8 +19,8 @@ def run_currency_filter_test(driver):
     test_results = []
 
     try:
-        print(f"Navigating to {PROPERTY_URL}...")
-        driver.get(PROPERTY_URL)
+        print(f"Navigating to {page_url}...")
+        driver.get(page_url)
         
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.CLASS_NAME, "js-price-value"))
@@ -65,7 +64,7 @@ def run_currency_filter_test(driver):
                 test_passed = all(currency_symbol in price for price in updated_prices)
                 
                 test_results.append({
-                    'Page URL': PROPERTY_URL,
+                    'Page URL': page_url,
                     'Test Case': f"Currency Change to {currency_code}",
                     'Status': test_passed,
                     'Comments': f"Updated prices: {updated_prices}"
@@ -77,7 +76,7 @@ def run_currency_filter_test(driver):
             except Exception as e:
                 print(f"Error processing currency {currency_code}: {str(e)}")
                 test_results.append({
-                    'page_url': PROPERTY_URL,
+                    'page_url': page_url,
                     'Test Case': f"Currency Change to {currency_code}",
                     'Status': False,
                     'Comments': f"Test failed: {str(e)}"
@@ -89,7 +88,7 @@ def run_currency_filter_test(driver):
     except Exception as e:
         print(f"Critical error during test: {str(e)}")
         test_results.append({
-            'Page URL': PROPERTY_URL,
+            'Page URL': page_url,
             'Test Case': "Currency Change Test",
             'Status': False,
             'Comments': f"Critical error: {str(e)}"

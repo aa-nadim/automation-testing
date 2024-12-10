@@ -2,5 +2,5 @@
 **/__pycache__/
 
 logs
-screenshots
+# screenshots
 reports/test_result.xlsx
