@@ -1,23 +1,11 @@
+# tests/test_scrape_data.py
 import os
-import time
 import pandas as pd
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from utils.driver_setup import setup_driver  
 from config.config import PROPERTY_URL
-
-# Function to initialize the browser
-def init_browser():
-    options = Options()
-    options.add_argument('--headless')
-    options.add_argument('--disable-gpu')
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=options)
-    return driver
 
 # Function to perform the test case
 def scrape_console_data(script_to_run):
@@ -25,7 +13,7 @@ def scrape_console_data(script_to_run):
     url = PROPERTY_URL  # Retrieve URL from config
     
     # Initialize the browser
-    driver = init_browser()
+    driver = setup_driver(headless=True)  # Use the setup_driver function for initialization
     
     try:
         # Open the test site URL
@@ -60,7 +48,7 @@ def scrape_console_data(script_to_run):
         df = pd.DataFrame([data])
 
         # Define the Excel file path
-        file_path = 'reports/scraped_data.xlsx'
+        file_path = 'reports/test_result.xlsx'
 
         # Check if the file already exists to decide whether to create a new file or append to the existing one
         if os.path.isfile(file_path):

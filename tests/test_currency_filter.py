@@ -1,3 +1,4 @@
+# tests/test_currency_filter.py
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -64,10 +65,10 @@ def run_currency_filter_test(driver):
                 test_passed = all(currency_symbol in price for price in updated_prices)
                 
                 test_results.append({
-                    'page_url': PROPERTY_URL,
-                    'testcase': f"Currency Change to {currency_code}",
-                    'passed': test_passed,
-                    'comments': f"Updated prices: {updated_prices}"
+                    'Page URL': PROPERTY_URL,
+                    'Test Case': f"Currency Change to {currency_code}",
+                    'Status': test_passed,
+                    'Comments': f"Updated prices: {updated_prices}"
                 })
                 
                 driver.execute_script("arguments[0].click();", currency_dropdown)
@@ -77,9 +78,9 @@ def run_currency_filter_test(driver):
                 print(f"Error processing currency {currency_code}: {str(e)}")
                 test_results.append({
                     'page_url': PROPERTY_URL,
-                    'testcase': f"Currency Change to {currency_code}",
-                    'passed': False,
-                    'comments': f"Test failed: {str(e)}"
+                    'Test Case': f"Currency Change to {currency_code}",
+                    'Status': False,
+                    'Comments': f"Test failed: {str(e)}"
                 })
         
         generate_report(test_results, 'currency_filtering_test')
@@ -88,10 +89,10 @@ def run_currency_filter_test(driver):
     except Exception as e:
         print(f"Critical error during test: {str(e)}")
         test_results.append({
-            'page_url': PROPERTY_URL,
-            'testcase': "Currency Change Test",
-            'passed': False,
-            'comments': f"Critical error: {str(e)}"
+            'Page URL': PROPERTY_URL,
+            'Test Case': "Currency Change Test",
+            'Status': False,
+            'Comments': f"Critical error: {str(e)}"
         })
     
     return test_results

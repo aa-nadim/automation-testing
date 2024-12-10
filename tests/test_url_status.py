@@ -1,15 +1,23 @@
-# tests/test_url_status.py
-
 import requests
 from selenium.webdriver.common.by import By
+from utils.test_utils import generate_report
 import logging
 
-def test_url_status(driver):
+def run_url_status_test(driver, page_url):
     """
     This test checks the status code of all URLs on the page.
     If any URL returns a 404 status code, the test fails.
+    
+    :param driver: Selenium WebDriver
+    :param page_url: URL of the page to test
+    :return: List of test results
     """
+    test_results = []
+
     try:
+        logging.info(f"Navigating to {page_url}...")
+        driver.get(page_url)
+
         logging.info("Checking status codes for all URLs on the page...")
 
         # Find all anchor tags (<a>) with 'href' attributes
@@ -24,7 +32,7 @@ def test_url_status(driver):
                 if "redirect-partner" in url or "placeholder" in url:
                     logging.info(f"Skipping URL: {url}")
                     continue
-                
+
                 if "www.alojamiento.io" not in url:
                     logging.info(f"Skipping external URL: {url}")
                     continue
@@ -42,14 +50,35 @@ def test_url_status(driver):
                     logging.error(f"Error checking URL: {url} - {e}")
                     broken_links.append(url)
 
-        # If there are broken links, fail the test
+        # Record the test result for the page
         if broken_links:
             logging.error(f"{len(broken_links)} broken link(s) found: {broken_links}")
-            return False, f"{len(broken_links)} broken link(s) found: {', '.join(broken_links)}"
-        
-        logging.info("All URLs are valid (no 404 errors).")
-        return True, "All URLs returned valid status codes."
+            test_results.append({
+                'Page URL': page_url,
+                'Test Case': "Check URL Status",
+                'Status': False,
+                'Comments': f"{len(broken_links)} broken link(s) found: {', '.join(broken_links)}"
+            })
+        else:
+            logging.info("All URLs are valid (no 404 errors).")
+            test_results.append({
+                'Page URL': page_url,
+                'Test Case': "Check URL Status",
+                'Status': True,
+                'Comments': "All URLs returned valid status codes."
+            })
 
     except Exception as e:
         logging.error(f"Error while checking URL status: {e}")
-        return False, f"Error: {e}"
+        test_results.append({
+            'Page URL': page_url,
+            'Test Case': "Check URL Status",
+            'Status': False,
+            'Comments': f"Error: {str(e)}"
+        })
+
+    # Generate the Excel report
+    generate_report(test_results, 'url_status_test')
+    logging.info("URL status test completed. Results saved.")
+
+    return test_results
