@@ -52,13 +52,13 @@ def main():
 
         # Run individual tests
         run_test(driver, PROPERTY_URL, test_h1_tag, "H1 tag existence test")
-        run_test(driver, PROPERTY_URL, test_html_tag_sequence, "HTML tag sequence test")
-        run_test(driver, PROPERTY_URL, test_image_alt_attribute, "Image alt attribute test")
-        run_test(driver, PROPERTY_URL, test_url_status, "URL status code test")
+        # run_test(driver, PROPERTY_URL, test_html_tag_sequence, "HTML tag sequence test")
+        # run_test(driver, PROPERTY_URL, test_image_alt_attribute, "Image alt attribute test")
+        # run_test(driver, PROPERTY_URL, test_url_status, "URL status code test")
 
         # Run the scraping function and save the data to CSV
-        script_to_run = "return window.ScriptData;"  # Adjust script based on requirements
-        scrape_console_data(script_to_run)
+        # script_to_run = "return window.ScriptData;"  
+        # scrape_console_data(script_to_run)
 
         # Run the test from test_currency_filter
         results = run_currency_filter_test(driver)

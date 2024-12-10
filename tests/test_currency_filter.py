@@ -4,8 +4,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import TimeoutException, StaleElementReferenceException
 from config.config import PROPERTY_URL
-from utils.excel_reporter import ExcelReporter
+
 from utils.driver_setup import setup_driver
+from utils.test_utils import generate_report
 import time
 
 def run_currency_filter_test(driver):
@@ -81,7 +82,7 @@ def run_currency_filter_test(driver):
                     'comments': f"Test failed: {str(e)}"
                 })
         
-        ExcelReporter.generate_report(test_results, 'currency_filtering_test')
+        generate_report(test_results, 'currency_filtering_test')
         print("Currency filtering test completed. Results saved.")
         
     except Exception as e:

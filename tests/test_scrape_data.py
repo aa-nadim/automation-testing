@@ -8,12 +8,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from config.config import BASE_URL
+from config.config import PROPERTY_URL
 
 # Function to initialize the browser
 def init_browser():
     options = Options()
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
     options.add_argument('--disable-gpu')
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
@@ -21,8 +21,8 @@ def init_browser():
 
 # Function to perform the test case
 def scrape_console_data(script_to_run):
-    # Use BASE_URL from the config
-    url = BASE_URL  # Retrieve URL from config
+    # Use PROPERTY_URL from the config
+    url = PROPERTY_URL  # Retrieve URL from config
     
     # Initialize the browser
     driver = init_browser()
