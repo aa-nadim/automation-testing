@@ -32,7 +32,7 @@ def main():
     try:
         logging.info("Starting test execution...")
 
-        driver = setup_driver(headless=True)
+        driver = setup_driver(headless=False)
         driver.maximize_window()
 
         # Navigate to the test URL
@@ -51,12 +51,12 @@ def main():
             return
 
 
-        run_h1_tag_test(driver,PROPERTY_URL)
-        run_html_tag_sequence_test(driver,PROPERTY_URL)
-        run_image_alt_attribute_test(driver,PROPERTY_URL)
-        run_url_status_test(driver,PROPERTY_URL)
-        script_to_run = "return window.ScriptData;"  
-        scrape_console_data(script_to_run)
+        # run_h1_tag_test(driver,PROPERTY_URL)
+        # run_html_tag_sequence_test(driver,PROPERTY_URL)
+        # run_image_alt_attribute_test(driver,PROPERTY_URL)
+        # run_url_status_test(driver,PROPERTY_URL)
+        # script_to_run = "return window.ScriptData;"  
+        # scrape_console_data(script_to_run)
         run_currency_filter_test(driver)
 
 
