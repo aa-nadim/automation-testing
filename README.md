@@ -10,7 +10,6 @@ This project automates the testing of web properties using Selenium WebDriver. I
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [File Structure](#file-structure)
 - [Tests Included](#tests-included)
 
 ---
@@ -69,33 +68,6 @@ This project automates the testing of web properties using Selenium WebDriver. I
    - **Logs**: `logs/test_logs.log`
    - **Reports**: `reports/test_result.xlsx`
    - **Screenshots**: `screenshots/`
-
----
-
-## File Structure
-
-```plaintext
-automation-testing/
-├── config/
-│   └── config.py          
-├── logs/                  
-├── reports/               
-├── screenshots/           
-├── tests/  
-│   ├── test_h1_tag.py   
-│   ├── test_html_tag_sequence.py   
-│   ├── test_image_alt_attribute.py  
-│   ├── test_url_status.py  
-│   ├── test_currency_filter.py  
-│   └── test_scrape_data.py              
-├── utils/
-│   ├── driver_setup.py    
-│   └── test_utils.py
-├── main.py                
-├── .gitignore             
-├── README.md              
-└── requirements.txt       
-```
 
 ---
 
