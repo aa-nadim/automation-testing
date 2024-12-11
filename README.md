@@ -42,7 +42,7 @@ This project automates the testing of web properties using Selenium WebDriver. I
 
 2. Create a virtual environment:
     ```bash
-    python -m venv .venv
+    python3 -m venv .venv
     source .venv/bin/activate  # On Windows: .venv/Scripts/activate
     ```
 
@@ -68,6 +68,15 @@ This project automates the testing of web properties using Selenium WebDriver. I
    - **Logs**: `logs/test_logs.log`
    - **Reports**: `reports/test_result.xlsx`
    - **Screenshots**: `screenshots/`
+
+4. In `reports/test_result.xlsx`, you will find the test results presented in a tabular format across six sheets:
+
+   -  **h1_tag_test**
+   -  **html_tag_sequence_test**
+   -  **image_alt_attribute_test**
+   -  **url_status_test**
+   -  **currency_filter_test**
+   -  **ScrapedData**
 
 ---
 
