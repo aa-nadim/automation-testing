@@ -2,5 +2,7 @@
 **/__pycache__/
 
 logs
-# screenshots
+screenshots
 reports/test_result.xlsx
+
+cloudfront_error.txt
